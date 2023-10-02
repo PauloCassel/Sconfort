@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    background-color: rgb(23, 113, 97);
+}
+
+header a {
+    color: white;
+}
+
+header img {
+    width: 100px;
+    height: 80px;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+    margin: 32px;
+}
+
+li{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 18px;
+}
+
+.linha {
+    position: relative;
+    color: white;
+}
+
+
+.linha::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2.5px;
+    background-color: rgb(21, 173, 255);
+    bottom: 0;
+    left: 0;
+    transition: width 0.8s;
+}
+
+.linha:hover:after {
+    width: 100%;
+}
+
+#logo {
+    align-self: center;
+    justify-self: center;
+}
+
+#carrinho {
+    align-self: center;
+    justify-self: center;
+}
+
+#button {
+    display: flex;
+    align-items: center;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+}
+
+#button:hover {
+    background-color: #2980b9;
+}
+
+header a img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.atendimento p {
+    padding-top: 8px;
+}
+
+footer h5 {
+    font-weight: normal;
+}
+
+footer {
+    background-color: rgb(226, 244, 255);
+    padding-top: 30px;
+    
+}
+
+footer h4 p{
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+hr {
+    height: 0.5px; background-color: black;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 150px;
+    padding-bottom: 30px;
+}
+
+svg {
+    width: 80px;
+    height: 80px;
+    transition: ease 0.3s
+}
+
+svg:hover {
+    background-color: rgb(176, 225, 255)
+}
