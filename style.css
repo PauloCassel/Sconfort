@@ -1,0 +1,379 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+/*--------- Header ---------*/
+
+header {
+    display: grid;
+    color: white;
+    grid-template-columns: 1fr 2fr 1fr;
+    width: 100%;
+    position: absolute;
+    background-color: #00000082;
+}
+
+header img {
+    height: 60px; 
+}
+
+ul {
+    margin: 32px;
+}
+
+li{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.linkHeader {
+    position: relative;
+    color: #ffffff;
+}
+
+.linkHeader::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #ccd5ae;
+    bottom: -2px;
+    left: 50%;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.linkHeader:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+#carrinho {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+#carrinho img {
+    height: 35px;
+    width: 35px;
+}
+
+#logo {
+    align-self: center;
+    justify-self: end;
+}
+
+/*--------- Main ---------*/
+
+.tela-principal {
+    display: flex;
+    flex-direction: column;
+    background-image: url(https://i0.wp.com/www.hawaiisurfpoint.com.br/wp-content/uploads/2016/10/tenis_para_andar_de_skate.png?fit=963%2C600&ssl=1);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.tela-principal p {
+    text-align: center;
+}
+
+.separator {
+    border-bottom: 1.6px solid #000000; 
+    width: 85%; 
+    margin: 20px auto; 
+}
+
+.separator {
+    display: none;
+}
+
+/*--------- Produtos ---------*/
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    font-weight: bold;
+    padding: 30px;
+}
+
+.produto {
+    padding: 14px;
+    border: 1px solid rgb(216, 216, 216);
+    cursor: pointer;
+}
+
+.conteudo .tela-principal p{
+    max-width: 90%;
+}
+
+.produto img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%; 
+}
+
+.produto p {
+    margin-top: 5px;
+}
+
+.descricao {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.produto:hover img {
+    transform: scale(1.05); 
+    transition: transform 0.4s ease;
+}
+
+/*--------- Descrições ---------*/
+
+.quem-somosClass {
+    display: flex;
+    background-color: #f9f9f9;
+    padding: 25px;
+    transition: transform 0.5s ease-in-out; 
+}
+
+.quem-somosClass:hover {
+    transform: translateX(20px);
+}
+
+.quem-somosClass .texto {
+    flex: 1;
+}
+
+.quem-somosClass .texto h1 {
+    color: #9f7e69;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 10px;
+    font-size: 45px;
+}
+
+.quem-somosClass .imagem img {
+    height: 500px;
+    width: auto;
+    margin-left: 25px;
+}
+
+.quem-somosClass .texto p {
+    font-size: 1.125rem; 
+    line-height: 150%;
+}
+
+.sobreNossaEmpresa {
+    display: flex;
+    background-color: #f9f9f9;
+    padding: 25px;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+.sobreNossaEmpresa .texto {
+    flex: 1;
+    text-align: left; 
+}
+
+.sobreNossaEmpresa .texto h1 {
+    color: #9f7e69;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 10px;
+    font-size: 45px;
+}
+
+.sobreNossaEmpresa .imagem img {
+    height: 500px;
+    width: auto;
+    max-width: 100%;
+    float: left; 
+    margin-right: 25px; 
+}
+
+.sobreNossaEmpresa .texto p {
+    font-size: 1.125rem;
+    line-height: 150%;
+    text-align: justify; 
+}
+
+.sobreNossaEmpresa2 {
+    display: flex;
+    background-color: #f9f9f9;
+    padding: 25px 25px 0px 25px;
+    transition: transform 0.5s ease-in-out; 
+}
+
+.sobreNossaEmpresa2:hover {
+    transform: translateX(20px); 
+}
+
+.sobreNossaEmpresa2 .texto {
+    flex: 1;
+}
+
+.sobreNossaEmpresa2 .texto h1 {
+    color: #9f7e69;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 10px;
+    font-size: 45px;
+}
+
+.sobreNossaEmpresa2 .imagem2 img {
+    max-height: 450px; 
+    width: auto; 
+    max-width: 100%;
+    float: left;
+    margin-right: 25px;
+}
+
+.sobreNossaEmpresa2 .texto {
+    flex: 1; 
+}
+
+
+.sobreNossaEmpresa2 .texto p {
+    font-size: 1.125rem; 
+    line-height: 150%;
+}
+
+
+/*--------- Footer ---------*/
+
+footer {
+    background-color: #f9f9f9;
+    padding: 30px;
+}
+
+footer h5 {
+    font-weight: normal;
+}
+
+footer h4 p {
+    padding: 5px 0;
+    text-align: center;
+}
+
+hr {
+    height: 1px;
+    background-color: #ccc;
+    border: none;
+    margin: 20px 0;
+}
+
+.grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+svg {
+    width: 40px;
+    height: 40px;
+    fill: #4f4e4e; 
+    transition: ease-in-out 0.3s;
+}
+
+svg:hover {
+    fill: #000000; 
+}
+
+/* Responsivo */
+
+@media screen and (max-device-width: 480px)
+{
+    header {
+        grid-template-columns: 1fr 1fr 1fr; 
+    }
+
+    header img {
+        padding-right: 0;
+    }
+
+    ul {
+        display: none;
+    }
+
+    .produtos {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        padding: 10px;
+    }
+
+    .produto {
+        padding: 10px;
+    }
+
+    .separator {
+        width: 100%;
+    }
+
+    .tela-principal {
+        background-image: url(./img/erik-hansman-PL5VrlAISt4-unsplash.jpg);
+        height: 280px;
+    }
+
+    .quem-somosClass {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .quem-somosClass img {
+        display: none;
+    }
+
+    .sobreNossaEmpresa {
+        display:flex;
+        flex-direction: column;
+        padding-top: 0px;
+        padding-right: 25px;
+        padding-left: 25px;
+        padding-bottom: 25px;
+    }
+
+    .sobreNossaEmpresa .imagem img{
+        height: auto;
+        width: auto;
+    }
+
+    .sobreNossaEmpresa2 {
+        display: none;
+    }
+    
+    .sobreNossaEmpresa2 img {
+        display: none;
+    }
+
+    .separator {
+        display: block;
+    }
+
+    footer {
+        padding: 0px;
+    }
+
+    footer .grid {
+        padding-left: 30px;
+    }
+
+    .conteudo h1 {
+        display: flex;
+        text-align: center;
+    }
+
+    .conteudo {
+        font-size: 13px;
+    }
+}
