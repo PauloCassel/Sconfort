@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Roboto:wght@500&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <script src="index.js"></script>
     <title>Scomfort</title>
 </head>
 
@@ -28,6 +29,7 @@
                     <a class="linkHeader" href="#produto">Products</a>
                     <a class="linkHeader" href="#sobreNossaEmpresa">Company</a>
                     <a class="linkHeader" href="#contato">Contact</a>
+                    <a class="linkHeader" href="#faq">FAQ</a>
                 </li>
             </ul>
         </div>
@@ -43,13 +45,13 @@
                 </div>
             
                 <div class="email">
-                    <p>E-mail</p>
-                    <input type="email">
+                    <p>Nome</p>
+                    <input type="email" id="email">
                 </div>
 
                 <div class="senha">
                     <p>Senha</p>
-                    <input type="password">
+                    <input type="password" id="senha">
                 </div>
 
                 <div class="lembrar">
@@ -58,8 +60,8 @@
                 </div>
 
                 <div class="botoes">
-                    <button onclick="closeDialog()">Cadastrar</button>
-                    <button onclick="closeDialog()">Entrar</button>
+                    <button onclick="entrar()">Cadastrar</button>
+                    <button onclick="entrar()">Entrar</button>
                 </div>
             </section>
         </div>
@@ -75,7 +77,7 @@
             </div>
         </section>
 
-        <div class="separator"></div>
+        <hr>
 
         <section class="produtos" id="produto">
             <div class="produto">
@@ -109,7 +111,50 @@
                         <p>$50,00</p>
                     </div>
             </div>
+
+            <div>
+                <img src="./img/seta.png" alt="seta" id="seta" onclick="troca()">
+            </div>
         </section>
+
+        <section class="produtos2" id="produto">
+            <div class="produto">
+                <img src="https://secure-static.vans.com.br/medias/sys_master/vans/vans/h9d/h3b/h00/h00/11512399495198/1003800130006U-01-BASEIMAGE-Hires.jpg" alt="Produto 1" onClick="Mensagem()">
+                <div class="descricao">
+                    <p>Vans Varsity Bitter Chocolate</p>
+                    <p>$190,00</p>
+                </div>
+            </div>
+        
+            <div class="produto">
+                <img src="https://secure-static.vans.com.br/medias/sys_master/vans/vans/ha7/h95/h00/h00/11423405539358/1003800130007U-01-BASEIMAGE-Hires.jpg" alt="Produto 2" onClick="Mensagem()">
+                <div class="descricao">
+                    <p>Vans Black True White</p>
+                    <p>$120,00</p>
+                </div>
+            </div>
+        
+            <div class="produto">
+                <img src="https://secure-static.vans.com.br/medias/sys_master/vans/vans/h92/ha3/h00/h00/11423198511134/1002002760001U-01-BASEIMAGE-Hires.jpg" alt="Produto 3" onClick="Mensagem()">
+                    <div class="descricao">
+                        <p>Vans Black True White</p>
+                        <p>$99,00</p>
+                    </div>
+            </div>
+
+            <div class="produto">
+                <img src="https://secure-static.vans.com.br/medias/sys_master/vans/vans/hd6/h48/h00/h00/11512287232030/1002000850171U-01-BASEIMAGE-Hires.jpg" alt="Produto 4" onClick="Mensagem()">
+                    <div class="descricao">
+                        <p>Vans Old School Red</p>
+                        <p>$89,00</p>
+                    </div>
+            </div>
+
+            <div>
+                <img src="./img/seta.png" alt="seta" id="seta" onclick="troca2()">
+            </div>
+        </section>
+        <hr>
 
         <section class="quem-somosClass animacao" id="quem-somosClass animacao">
             <div class="texto">
@@ -126,7 +171,6 @@
                 <img src="./img/austin-distel-mpN7xjKQ_Ns-unsplash.jpg" alt="foto de pessoas">
             </div>
 
-            <div class="separator"></div>
         </section>
 
         <section class="sobreNossaEmpresa" id="sobreNossaEmpresa">
@@ -145,7 +189,6 @@
                     future. Therefore, we integrate the latest technological innovation into every product we create,
                     with an unwavering commitment to minimizing our impact on the environment.</p>
             </div>
-            <div class="separator"></div>
         </section>
 
         <section class="sobreNossaEmpresa2" id="sobreNossaEmpresa2">
@@ -164,6 +207,29 @@
             <div class="imagem2">
                 <img src="./img/leohoho-dQyWiznMtho-unsplash.jpg" alt="foto de pessoas">
             </div>
+        </section>
+
+
+        <section class="faq" id="faq">
+            <div class="titulo">
+                <h1>FAQ</h1>
+            </div>
+        
+            <div class="pergunta">
+                <h3>How do I make a purchase?</h3>
+                <p>Simply navigate to the products section, choose the desired item, and click "Buy." Follow the instructions to complete the purchase.</p>
+            </div>
+            
+            <div class="pergunta">
+                <h3>What are the available payment options?</h3>
+                <p>We accept credit and debit cards, and we also offer secure online payment options.</p>
+            </div>
+            
+            <div class="pergunta">
+                <h3>Can I return a product?</h3>
+                <p>Yes, you can return a product within 30 days from the date of purchase. Please refer to our return policy for more details.</p>
+            </div>
+        
         </section>
     </main>
     
@@ -208,30 +274,18 @@
                     </svg></a>
             </div>
         </div>
+        <div class="footer-bottom">
+            <div class="footer-links">
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Returns & Refunds</a>
+                <a href="#">Shipping Policy</a>
+            </div>
+        </div>
         <hr>
-        <h4>
-            <p>2023 SConfort. All rights reserved.</p>
-        </h4>
+            <div class="sconfort">
+                <h4>2023 SComfort. All rights reserved.</h4>
+            </div>
     </footer>
-
-    <script>
-        var contador = 0;
-
-        function openDialog() {
-    document.getElementById("customDialog").style.display = "block";
-  }
-
-  function closeDialog() {
-    document.getElementById("customDialog").style.display = "none";
-  }
-        function Mensagem() {
-            let numero = document.getElementById("numeroCarrinho");
-
-            contador++;
-
-            numero.style.display = "block";
-            numero.innerText =  contador;
-        }
-    </script>
 </body>
 </html>
