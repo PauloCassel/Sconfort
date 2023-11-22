@@ -8,6 +8,113 @@
 
 /*--------- Header ---------*/
 
+.dialog {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    width: 25vw;
+    height: 68vh;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(to top left, white 60%, #febc59 40%);
+  }
+
+#login {
+    border: none;
+    padding: 10px;
+    border-radius: 15%;
+    margin-left: 140px;
+    background-color: #febc59;
+    color: #293356;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    margin-top: 7vh;
+    color: #293356;
+}
+
+.icone {
+    position: absolute;
+    top: 1.5vh; 
+    left: 1vw; 
+    cursor: pointer;
+}
+
+.icone img{
+    width: 2.5vw;
+    height: auto;
+}
+
+.titulo span{
+    color: #293356;
+}
+
+.email{
+    margin-top: 10vh;
+}
+
+.senha{
+    margin-top: 3vh;
+}
+
+.email, .senha{
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;  
+    align-items: center;
+}
+
+.email p, .senha p{
+    padding-right: 15vw;
+    color: #293356;
+}
+
+.email input, .senha input{
+    width: 73%;
+    height: 3vh;
+}
+
+.lembrar{
+    display: flex;
+    margin: 3vh 0 0 3.3vw;  
+    color: #293356;
+}
+
+.lembrar input{
+    margin-right: 0.5vw;
+}
+
+.botoes {
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.botoes button {
+    background-color: #febc59;
+    color: #293356;
+    border: none;
+    cursor: pointer;
+    padding: 12px 20px;
+    min-width: 120px;
+    border-radius: 25px;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.botoes button:hover {
+    background-color: #0077b6;
+}
+
+
+/* ------------------- Header --------------------------- */
+
 header {
     display: grid;
     color: white;
@@ -17,8 +124,13 @@ header {
     background-color: #00000082;
 }
 
+#numeroCarrinho {
+    padding-left: 20px;
+}
+
 header img {
     height: 60px; 
+    cursor: pointer;
 }
 
 ul {

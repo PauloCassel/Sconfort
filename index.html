@@ -34,6 +34,34 @@
         
         <div id="carrinho">
             <a href=""><img src="img/icons8-carrinho-90.png"></a>
+            <h2 id="numeroCarrinho">0</h2>
+            <button id="login" onclick="openDialog()">Login</button>
+
+            <section id="customDialog" class="dialog">
+                <div class="titulo">
+                    <h1><span>Iniciar Sessão</span></h1>
+                </div>
+            
+                <div class="email">
+                    <p>E-mail</p>
+                    <input type="email">
+                </div>
+
+                <div class="senha">
+                    <p>Senha</p>
+                    <input type="password">
+                </div>
+
+                <div class="lembrar">
+                    <input type="checkbox" class="lembrarSenha">
+                    <label for="lembrarSenha">Lembrar senha</label>
+                </div>
+
+                <div class="botoes">
+                    <button onclick="closeDialog()">Cadastrar</button>
+                    <button onclick="closeDialog()">Entrar</button>
+                </div>
+            </section>
         </div>
     </header>
 
@@ -51,7 +79,7 @@
 
         <section class="produtos" id="produto">
             <div class="produto">
-                <img src="./img/vans1.webp" alt="Produto 1">
+                <img src="./img/vans1.webp" alt="Produto 1" onClick="Mensagem()">
                 <div class="descricao">
                     <p>Vans Black White</p>
                     <p>$150,00</p>
@@ -59,7 +87,7 @@
             </div>
         
             <div class="produto">
-                <img src="./img/vans3.webp" alt="Produto 2">
+                <img src="./img/vans3.webp" alt="Produto 2" onClick="Mensagem()">
                 <div class="descricao">
                     <p>Vans Skate White</p>
                     <p>$100,00</p>
@@ -67,7 +95,7 @@
             </div>
         
             <div class="produto">
-                <img src="./img/vans4.webp" alt="Produto 3">
+                <img src="./img/vans4.webp" alt="Produto 3" onClick="Mensagem()">
                     <div class="descricao">
                         <p>Vans Skate Black Blue</p>
                         <p>$75,00</p>
@@ -75,7 +103,7 @@
             </div>
 
             <div class="produto">
-                <img src="./img/vans5.webp" alt="Produto 3">
+                <img src="./img/vans5.webp" alt="Produto 4" onClick="Mensagem()">
                     <div class="descricao">
                         <p>Vans Brown Chess</p>
                         <p>$50,00</p>
@@ -180,13 +208,33 @@
                     </svg></a>
             </div>
         </div>
-        </div>
         <hr>
         <h4>
             <p>2023 SConfort. All rights reserved.</p>
         </h4>
     </footer>
 
+    <script>
+        var contador = 0;
+
+        function openDialog() {
+    document.getElementById("customDialog").style.display = "block";
+  }
+
+  function closeDialog() {
+    document.getElementById("customDialog").style.display = "none";
+  }
+        function Mensagem() {
+            let numero = document.getElementById("numeroCarrinho");
+
+            contador++;
+
+            numero.style.display = "block";
+            numero.innerText =  contador;
+        }
+
+        
+    </script>
 
 </body>
 
