@@ -1,26 +1,26 @@
 var contador = 0;
 
 function entrar() {
-let numero = document.getElementById("numeroCarrinho");
-var login = document.getElementById("login");
-var email = document.getElementById("email").value;
-var senha = document.getElementById("senha").value;
+    let numero = document.getElementById("numeroCarrinho");
+    var login = document.getElementById("login");
+    var email = document.getElementById("email").value;
+    var senha = document.getElementById("senha").value;
 
-if (email.trim() == "" && senha.trim() == "") {
-    alert("Por favor, preencha todos os campos.");
-} else {
-    alert("Bem-vindo, " + email);
-    
-    login.innerText =  "Bem-Vindo, " + email;
+    if (email.trim() == "" && senha.trim() == "") {
+        alert("Por favor, preencha todos os campos.");
+    } else {
+        alert("Bem-vindo, " + email);
 
-    login.disabled = true;
+        login.innerText = "Bem-Vindo, " + email;
 
-    login.style.marginLeft = "100px";
+        login.disabled = true;
 
-    numero.style.display = "block";
+        login.style.marginLeft = "100px";
 
-    closeDialog();
-}
+        numero.style.display = "block";
+
+        closeDialog();
+    }
 }
 function openDialog() {
     document.getElementById("customDialog").style.display = "block";
@@ -34,7 +34,7 @@ function Mensagem() {
 
     contador++;
 
-    numero.innerText =  contador;
+    numero.innerText = contador;
 }
 
 function troca() {

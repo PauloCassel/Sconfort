@@ -1,15 +1,10 @@
 Apresentação:
-
-
-Good evening, everyone. My name is Paulo, and today I will introduce a website that I created for an online shoe store.
-Its name is SCOMFORT. (I apologize for any errors; I am a bit nervous about speaking in English.)
-
--------------------------------
+Good night, everyone. My name is Paulo, and today I introduce a website that I created for an online shoe store.
+Its name is SCOMFORT.
 
 Introdução:
-
-The SCOMFORT Project is essentially an E-Commerce website for shoes. It was built using HTML, CSS, and Javascript,
-all to make it highly intuitive and easily accessible. In this presentation, some of its functionalities will be described.
+The SCOMFORT Project is essentially an E-Commerce website for shoes. It was building using HTML, CSS, and Javascript,
+all to make it high intuitive and easy accessible. In this apresentation, some of its functionalities will be described.
 
 -------------------------------
 
