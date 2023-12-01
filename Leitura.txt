@@ -1,0 +1,68 @@
+Apresentação:
+
+
+Good evening, everyone. My name is Paulo, and today I will introduce a website that I created for an online shoe store.
+Its name is SCOMFORT. (I apologize for any errors; I am a bit nervous about speaking in English.)
+
+-------------------------------
+
+Introdução:
+
+The SCOMFORT Project is essentially an E-Commerce website for shoes. It was built using HTML, CSS, and Javascript,
+all to make it highly intuitive and easily accessible. In this presentation, some of its functionalities will be described.
+
+-------------------------------
+
+Página Inicial: 
+
+
+On the website's homepage, we have the brand logo "SCOMFORT," alongside a list of 4 items: "About Us," "Products," "Company,"
+and "FAQ." Each of them leads to their respective sections on the page. On the right side, there is a shopping cart
+where your purchases will be stored. This functionality becomes active after logging in, which is located right next
+to the cart.
+For the login, you can use an email and password combination to log into the site, enabling you to add items
+to the shopping cart.
+
+-------------------------------
+
+Produtos:
+
+
+After the website introduction, we will showcase some sneakers for sale. Just like on the login and registration screens,
+the navigation is simple and intuitive. You will find four options of sneakers carefully selected to cater to your
+style and preferences. Hovering over a sneaker image will enlarge it for easier product analysis. Below the image,
+you will find the product name and its corresponding price.
+
+-------------------------------
+
+About Company:
+
+In the section titled "About Scomfort," we provide more information about our company, including why it was created,
+the reason for establishing an online sneaker store, and various other details.
+In the "Company" section, you'll find information about the location of Scomfort, highlighting
+the qualities both inside and outside the company. The last topic emphasizes its interactivity, 
+providing a brief expansion to enhance the fluidity of the page.
+
+-------------------------------
+
+F.A.Q:
+
+
+Following the insights into the "SCOMFORT" company, we have the section called FAQ - "Frequently Asked Questions."
+Three questions have been selected, addressing some of the most commonly asked queries received by our support team.
+This is designed to simplify and address any user doubts.
+Example:
+How do I make a purchase?
+Simply navigate to the products section, choose the desired item, and click on the image. Follow the
+instructions to complete the purchase.
+
+-------------------------------
+
+Contact:
+
+Finally, we have the website footer. Here, you can find information about our support for those who need
+to get in touch, with contact methods such as telephone and email.
+On the right side, you'll also find links to our social media profiles for people to follow, including "Facebook,"
+"Instagram," "Twitter," and "LinkedIn," each with their respective logos. Below, there are stylized options for
+"Terms of Service," "Privacy Policy," "Returns & Refunds," and "Shipping Policy." These are for reference only and
+are not interactive.
